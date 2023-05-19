@@ -1,41 +1,23 @@
-# Backend Junior Developer (Intern) Test
+# OpenFabric-Assignment
 
-Welcome! and thank you for applying!
+Hi recruiters 🙋🏻‍♂️, this is my submission for the assignment-task for the role of ```Backend Engineer Intern``` 
 
-## Requirement
 
-Your task is to add the necessary features to the current project's API blueprint structure to enable
-it to manage **Docker** containers, also referred to as workers, as fallows:
+## Implementations:
+- Changes
+    1. Connected to the docker client using Docker-Java library
+    2. Updated the database schema for the worker and created suitable migration.
+    3. Instead of creating redundant tables and entities, I created a link between the workers and the underlying containers.
 
-🔄 Integrate the 🐳 Docker Java library (https://github.com/docker-java/docker-java/blob/main/docs/getting_started.md) to enable connect and manage 👷‍♀️ workers.
 
-➕ Add the required fields and database migration for the 👷‍♂️ Worker entity to keep **all** the information associated on available at the container level (like 🔌 ports, 👨‍💼 name, 🟢 status, etc..)
+- APIs
+    1. List all Workers (paginated) - ✅
 
-🆕 Add required entities and tables to track the 👷‍♂️ Worker statistics.
+    2. Get information about a worker - ✅
 
-🆙 Update the 👷‍♂️ WorkerController to add actions for:
-* 📄 List workers (paginated)
-* ▶️ Start and ⏹️ Stop worker
-* 🔍 Get worker information
-* 📊 Get worker statistics
+    3. Get statistics about a worker - ✅
 
-## Constraints and restrictions
-
-You are free to use any package or library you see feet as long as you follow these rules:
-
-* 👎 You can't copy and paste from other peoples work
-
-## Run
-
-Once you have established a connection to the database, you can test the application by using Swagger.
+    4. Pause/Resume a worker - ✅
 
 You can access Swagger by navigating to the following link: http://localhost:8080/swagger-ui/#/.
 
-## Submission
-
-Your solution must be uploaded on GitHub, and submit us the link in **max 1 week** after receiving the task.
-
-## Note
-
-Keep in mind that this is the project that will be used to evaluate your skills.
-So we do expect you to make sure that the app is fully functional and doesn't have any obvious missing pieces.
